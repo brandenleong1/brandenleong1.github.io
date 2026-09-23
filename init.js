@@ -2,7 +2,7 @@ async function init() {
 	await initTheme(parseInt(Cookies.getCookie('themeID'), 10) || 0);
 
 	let link = document.createElement('link');
-	link.href = 'utils/themes/transition.css';
+	link.href = 'lib/utils/themes/transition.css';
 	link.rel = 'stylesheet';
 	link.type = 'text/css';
 	document.head.append(link);
